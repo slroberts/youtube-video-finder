@@ -8,7 +8,7 @@ export const getVideoById = async (value, setResponse, setError) => {
   });
 
   if (response.data.items.length === 0) {
-    setError('Video not found, try another id');
+    setError('Video not found, try another video id');
   } else {
     setResponse(response.data.items);
   }
